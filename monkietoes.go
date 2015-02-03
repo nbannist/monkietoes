@@ -3,10 +3,15 @@ package monkietoes
 import (
     "fmt"
     "net/http"
+   	"github.com/gorilla/mux"
 )
 
 func init() {
-    http.HandleFunc("/", simpleHello)
+	appRouter := mux.NewRouter()
+	appRouter.HandleFunc("/", simpleHello)
+
+
+	http.Handle("/", appRouter)
 }
 
 func simpleHello(w http.ResponseWriter, req *http.Request) {
