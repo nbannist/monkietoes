@@ -1,0 +1,19 @@
+application: <the application id>
+version: <the version id>
+runtime: go
+api_version: go1
+threadsafe: yes
+
+handlers:
+- url: /favicon\.ico
+  static_files: favicon.ico
+  upload: favicon\.ico
+
+# All the image, javascript, and style files
+- url: /(img|js|css)/(.*)
+  static_files: static/\1/\2
+  upload: static/(img|js|css)/.*
+
+# Everything else... considered a script.
+- url: /.*
+  script: _go_app
