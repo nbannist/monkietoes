@@ -1,7 +1,8 @@
-Installing MonkieToes
----------------------
+Installing MonkieToes for Google App Engine
+--------------------------------------------
  
-1) Install Google App Engine Go Runtime
+1) Install Go or Google App Engine Go Runtime
+	Heroku Instructions will come later
 
 	...
 
@@ -12,7 +13,11 @@ Installing MonkieToes
 
 3) Install MonkieToes
 
-	...
+	Rename app.settings.yaml --> app.yaml
+
+	Replace "<the application id>" with the appid you're using on App Engine
+	Replace "<the version id>" with a version id of your choosing.
+
 
 4)  ...
 
@@ -21,5 +26,6 @@ Installing MonkieToes
 
 
 Go App Command
-Run on current directory on port 8090 and admin port 8009
+Run on the current directory (if you're in the directory your app lives in) 
+on port 8090 and admin port 8009
 $ goapp serve -port=8090 -admin_port=8009 ./
