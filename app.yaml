@@ -1,5 +1,5 @@
-application: webapp-prototypes
-version: monkietoes-0-1-0-a-test
+application: monkietoes
+version: alpha-001
 runtime: go
 api_version: go1
 threadsafe: yes

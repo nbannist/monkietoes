@@ -1,0 +1,12 @@
+application: monkietoes
+version: one
+runtime: go
+api_version: go1
+threadsafe: yes
+
+dispatch:
+  - url: "*/"
+    module: default
+
+  - url: "*/api"
+    module: backend

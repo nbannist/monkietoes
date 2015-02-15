@@ -1,0 +1,29 @@
+{
+  "name": "monkietoes",
+  "version": "0.1.0",
+  "homepage": "https://github.com/nbannist/monkietoes",
+  "authors": [
+    "Nicholas Bannister-Andrews <nbannist@gmail.com>"
+  ],
+  "description": "A Simple Blog written in Go on the Backend and Ember.js on the Frontend.",
+  "main": "monkietoes.go",
+  "moduleType": [
+    "globals"
+  ],
+  "keywords": [
+    "Go",
+    "Ember.js",
+    "App",
+    "Engine",
+    "Heroku.com"
+  ],
+  "license": "MIT",
+  "private": true,
+  "ignore": [
+    "**/.*",
+    "node_modules",
+    "bower_components",
+    "test",
+    "tests"
+  ]
+}

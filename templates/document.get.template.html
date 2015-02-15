@@ -1,0 +1,50 @@
+{{ define "title" }} {{.Title}} {{ end }}
+
+{{ define "metadata"}}
+	<meta charset="UTF-8">
+	<!-- TODO: add dynamic meta data -->
+	<meta name="" content="">
+{{ end }}
+
+
+<!-- The Styles that are in the head -->
+{{ define "styles"}}
+	<link href="/css/styles.css" ref="text/stylesheet" language="css/stylesheet">
+{{ end }}
+
+
+
+{{ define "header" }}
+	<header>
+		<h2>APP</h2>
+	</header>
+{{ end }}
+
+
+
+{{ define "content" }}
+    <article id="docid-{{.Docid}}">
+    	<h1>{{.Title}}</h1>
+    	<div class="workspace">
+    		<div id="editor">EDITOR</div>
+    		<div id="preview">PREVIEW</div>
+    	</div>
+    </article>
+{{ end }}
+
+
+
+{{ define "footer" }}
+	<footer class="with-head">
+		{{ template "footer-header" . }}
+		<section>
+			footer.skirt
+		</section>
+	</footer>
+{{ end }}
+
+
+
+{{ define "scripts" }}
+	<script src=""></script>
+{{ end }}
